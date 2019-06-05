@@ -1,4 +1,4 @@
-*{
+body {
     box-align: center;
     text-align: center;
     background-image: url("photos/background.jpg");
@@ -7,6 +7,10 @@
     color: white;
 }
 
-div.background{
-    opacity: 0;
+a.hyperlinkcolor a:visited a:hover{
+    color: crimson;
+}
+
+a.hyperlinkcolorfix{
+    color: crimson;
 }
