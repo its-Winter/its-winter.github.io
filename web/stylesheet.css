@@ -1,6 +1,12 @@
 *{
-    background-image: image("/photos/background.jpg");
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(56, 56, 56);
+    box-align: center;
+    text-align: center;
+    background-image: url("photos/background.jpg");
+    background-size: cover;
+    font-family: 'Segoe UI', sans-serif;
     color: white;
+}
+
+div.background{
+    opacity: 0;
 }
