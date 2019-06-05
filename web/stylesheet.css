@@ -11,10 +11,6 @@ body {
     color: white;
 }
 
-a.hyperlinkcolor a:visited a:hover{
-    color: cyan;
-}
-
-a.hyperlinkcolorfix{
+a.hyperlinkcolor {
     color: cyan;
 }
