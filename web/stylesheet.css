@@ -1,16 +1,20 @@
+*{
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: normal;
+}
+
 body {
     box-align: center;
     text-align: center;
-    background-image: url("photos/background.jpg");
+    background-image: url("photos/material.jpg");
     background-size: cover;
-    font-family: 'Segoe UI', sans-serif;
     color: white;
 }
 
 a.hyperlinkcolor a:visited a:hover{
-    color: crimson;
+    color: cyan;
 }
 
 a.hyperlinkcolorfix{
-    color: crimson;
+    color: cyan;
 }
