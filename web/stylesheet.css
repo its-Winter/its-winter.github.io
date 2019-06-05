@@ -1,5 +1,6 @@
 *{
+    background-image: image("/photos/background.jpg");
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(80, 80, 80);
+    background-color: rgb(56, 56, 56);
     color: white;
 }
