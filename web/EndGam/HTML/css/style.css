@@ -370,6 +370,17 @@ ol {
 	padding-right: 20px;
 }
 
+li.main-menuhome a {
+	position: absolute;
+	content: "";
+	width: 20px;
+	height: 20px;
+	right: 0;
+	top: 1px;
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
 .main-menu li a:after {
 	position: absolute;
 	content: "";
@@ -685,7 +696,7 @@ ol {
 .blog-item .text-box {
 	overflow: hidden;
 }
-
+ 
 .blog-item .text-box p {
 	margin-bottom: 42px;
 }
