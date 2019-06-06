@@ -1,16 +1,17 @@
 *{
-    font-family: 'Segoe UI', sans-serif;
-    font-weight: normal;
+     font-family: 'Segoe UI', sans-serif;
+     font-weight: normal;
 }
 
 body {
-    box-align: center;
-    text-align: center;
-    background-image: url("photos/material.jpg");
-    background-size: cover;
-    color: white;
+     box-align: center;
+     text-align: center;
+     background-image: url("photos/material.jpg");
+     background-size: cover;
+     color: white;
 }
 
-a.hyperlinkcolor {
-    color: cyan;
+a.hyperlink {
+     font-weight: bold;
+     color: cyan;
 }
