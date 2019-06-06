@@ -11,7 +11,22 @@ body {
      color: white;
 }
 
+h1.header {
+     background: url("photos/header.jpg") no-repeat left top;
+     height: 100px;
+     border-color: white;
+     border: 30px;
+     text-align: center;
+     background-size: 13%;
+     margin-left: 60px;
+}
+
 a.hyperlink {
      font-weight: bold;
      color: cyan;
+}
+
+.grad1 {
+     height: auto;
+     background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(79, 185, 255)); /* Standard syntax (must be last) */
 }
