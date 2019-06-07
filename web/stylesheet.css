@@ -4,9 +4,7 @@
 }
 
 body {
-     box-align: center;
-     background-image: url("photos/material.jpg");
-     background-size: cover;
+     margin: 0;
 }
 
 h1, h2, p {
@@ -17,8 +15,16 @@ h2 {
      margin: 30px 0;
 }
 
+section {
+     background-size: cover;
+     min-height: 100vh;
+     width: 100%;
+     background-image: url("photos/material.jpg");
+}
+
 .container {
      margin: 0 auto;
+     padding: 85px 0;
      text-align: center;
 }
 
@@ -60,8 +66,14 @@ h2 {
 }
 
 .grad1 {
-     border: 1px solid white;
-     background: linear-gradient(140deg, rgba(55,55,55,0) 0%, rgba(144, 144, 172, 0.3) 65%, rgb(170, 218, 228) 100%);
+     position: absolute;
+     top: 0;
+     width: 100%;
+     text-align: center;
+     margin: 6px 0;
+     border-top: 1px solid white;
+     border-bottom: 1px solid white;
+     background: linear-gradient(140deg, rgba(55,55,55,0) 0%, rgba(55,55,55,0) 45%,rgba(144, 144, 172, 0.3) 65%, rgb(170, 218, 228) 100%);
 }
 
 .grad1 h1 {
@@ -69,22 +81,24 @@ h2 {
 }
 
 .makeupone {
+     transition: .6s ease-in-out;
      transform: translateY(0px);
      animation: float 4.5s ease-in-out infinite;
      margin: 20px 0;
 }
 
+.makeupone:hover {
+     box-shadow: 0 5px 15px 0px rgb(106, 145, 165);
+}
+
 @keyframes float {
      0% {
-          box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
           transform: translateY(20px);
      }
      50% {
-          box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
           transform: translateY(0px);
      }
      100% {
-          box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
           transform: translateY(20px);
      }
 }
