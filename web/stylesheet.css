@@ -30,7 +30,7 @@ section {
 
 .anyclassyouwant {
      display: flex;
-     justify-content: center;
+     align-items: center;
      flex-direction: column;
 }
 
