@@ -1,5 +1,5 @@
 * {
-     font-family: 'Segoe UI', sans-serif;
+     font-family: 'Montserrat', 'Segoe UI';
      font-weight: normal;
 }
 
@@ -50,19 +50,31 @@ section {
 }
 
 .textfix p {
-     text-align: left;
+     text-align: center;
      font-weight: 600;
 }
 
-.hyperlink {
-     font-weight: bold;
-     color: rgb(0, 89, 255);
-     text-decoration: none;
-     transition: .6s ease-in-out;
+.gridview {
+     display: flex;
+     flex-direction: row;
 }
 
-.hyperlink:hover {
-     color: aqua;
+.textfix a {
+     font-weight: normal;
+     color: rgb(255, 20, 20);
+     text-decoration: none;
+     transform: translateX(0px);
+     transition: 0.6s ease-in-out;
+     display: inline-block;
+     margin-left: 10px;
+}
+
+.textfix a:hover {
+     text-shadow: 6px 15px 15px 6px rgba(201, 201, 201, 1);
+     color: rgb(255, 0, 0);
+     transform: translateX(2px);
+     transform: scale(1.1);
+     text-shadow: 0px 0px 11px rgba(255, 255, 255, 0.5);
 }
 
 .grad1 {
@@ -73,7 +85,7 @@ section {
      margin: 6px 0;
      border-top: 1px solid white;
      border-bottom: 1px solid white;
-     background: linear-gradient(140deg, rgba(55,55,55,0) 0%, rgba(55,55,55,0) 45%,rgba(144, 144, 172, 0.3) 65%, rgb(170, 218, 228) 100%);
+     background: linear-gradient(140deg, rgba(255,20,20,1) 0%, rgba(85,85,117,0) 50%, rgba(255,20,20,1) 100%)
 }
 
 .grad1 h1 {
@@ -82,13 +94,14 @@ section {
 
 .makeupone {
      transition: .6s ease-in-out;
+     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 1);
      transform: translateY(0px);
      animation: float 4.5s ease-in-out infinite;
      margin: 20px 0;
 }
 
 .makeupone:hover {
-     box-shadow: 0 5px 15px 0px rgb(106, 145, 165);
+     box-shadow: 0 5px 15px 0 rgb(255, 23, 23);
 }
 
 @keyframes float {
