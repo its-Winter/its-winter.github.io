@@ -61,7 +61,7 @@ section {
 
 .textfix a {
      font-weight: bold;
-     color: rgb(130, 0, 0);
+     color: rgb(220, 0, 0);
      text-decoration: none;
      transform: translateX(0px);
      transition: 0.6s ease-in-out;
