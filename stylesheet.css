@@ -60,8 +60,8 @@ section {
 }
 
 .textfix a {
-     font-weight: normal;
-     color: rgb(255, 20, 20);
+     font-weight: bold;
+     color: rgb(130, 0, 0);
      text-decoration: none;
      transform: translateX(0px);
      transition: 0.6s ease-in-out;
@@ -70,11 +70,10 @@ section {
 }
 
 .textfix a:hover {
-     text-shadow: 6px 15px 15px 6px rgba(201, 201, 201, 1);
+     text-shadow: 0px 0px 12px rgba(201, 201, 201, 0.6);
      color: rgb(255, 0, 0);
      transform: translateX(2px);
-     transform: scale(1.1);
-     text-shadow: 0px 0px 11px rgba(255, 255, 255, 0.5);
+     transform: scale(1.06);
 }
 
 .grad1 {
