@@ -1,8 +1,52 @@
 *{
-    font-family: 'Segoe UI', sans-serif;
-    font-weight: 300;
+    font-family: 'Montserrat', 'Segoe UI';
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 body {
-    background: darkgray;
+    margin: 0;
+    background: url("photos/background.jpg");
+    height: 98%;
+    width: 100%;
+    background-size: cover;
+}
+
+.fix {
+    color: white;
+    height: 100%;
+    width: 100%;
+    align-content: center;
+    text-align: center;
+}
+
+.fix h1 {
+    font-weight: 600;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.8);
+    padding-top: 55px;
+    padding-bottom: 55px;
+    animation: spin 5s infinite linear;
+}
+
+.fix p {
+    letter-spacing: 1px;
+    padding: 2px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
