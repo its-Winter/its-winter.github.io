@@ -44,6 +44,12 @@ body {
     color: black;
 }
 
+.about{
+    width: 100%;
+    min-height: 100vh;
+    background: darkgray;
+}
+
 @keyframes float {
     0% {
         transform: translateY(-20px);
