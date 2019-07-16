@@ -64,7 +64,7 @@ section {
 
 .textfix a {
      font-weight: bold;
-     color: rgb(220, 0, 0);
+     color: rgb(0, 19, 54);
      text-decoration: none;
      transition: 0.6s ease-in-out;
      display: inline-block;
@@ -72,8 +72,8 @@ section {
 }
 
 .textfix a:hover {
-     text-shadow: 0px 0px 12px rgba(110, 110, 110, 0.8);
-     color: rgb(255, 0, 0);
+     text-shadow: 0px 0px 12px rgba(110, 110, 110);
+     color: rgb(0, 33, 95);
 }
 
 .grad1 {
@@ -85,7 +85,7 @@ section {
      margin: 9px 0;
      border-top: 1px solid white;
      border-bottom: 1px solid white;
-     background: linear-gradient(140deg, rgba(255,0,0,1) 0%, rgba(255,0,0,0) 0%, rgba(224,32,37,0.29735644257703087) 20%, rgba(255,20,20,0.7035189075630253) 50%, rgba(255,16,16,0.3) 80%, rgba(255,0,0,0) 100%);
+     background: linear-gradient(128deg, rgba(255,255,255,0) 0%, rgba(87,145,167,0.7231267507002801) 25%, rgba(78,129,175,1) 50%, rgba(88,141,166,0.6923144257703081) 75%, rgba(255,255,255,0) 100%);
 }
 
 .grad1 h1 {
