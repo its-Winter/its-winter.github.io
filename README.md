@@ -10,4 +10,4 @@ body {
 }
 </style>
 <b>Aligning Planets...</b>
-<meta http-equiv="Refresh" content="2; url=https://its-winter.github.io/mysite/home" />
+<meta http-equiv="Refresh" content="2; url=https://its-winter.github.io/home" />
