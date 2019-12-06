@@ -91,8 +91,13 @@ body {
 
 .center a {
      text-decoration: none;
-     color: cyan;
+     font-weight: bold;
+     color: purple;
      transition: 0.5s ease-in-out;
+}
+
+.center a:visited {
+    color: paleturquoise;
 }
 
 .center a:hover {
