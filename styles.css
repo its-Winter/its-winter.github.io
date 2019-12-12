@@ -2,68 +2,51 @@
      -webkit-font-smoothing: antialiased;
      -moz-osx-font-smoothing: grayscale;
      text-rendering: optimizeLegibility;
+     justify-content: center;
+     text-align: center;
 }
 
 body {
      margin: 0;
-     font-family: 'Nunito Sans', 'Segoe UI', sans-serif;
+     font-family: 'Roboto Condensed', 'Segoe UI', sans-serif;
      font-weight: normal;
      color: white;
-     align-content: center;
 }
 
 .main {
      background: url("photos/background.jpg");
+     background-position: center top;
+     background-repeat: no-repeat;
      background-size: cover;
      min-height: 100vh;
      width: 100%;
      display: flex;
      flex-direction: column;
-     justify-content: center;
-     align-items: center;
-}
-
-.main::before {
-     position: absolute;
-     content: "";
-     background-image: url("photos/background.jpg");
-     background-size: cover;
-     min-height: 100vh;
-     width: 100%;
-     filter: grayscale(80%);
-}
-
-.main-inside {
-     position: relative;
 }
 
 .logo {
      display: flex;
-     justify-content: center;
 }
 
 .logo img {
      width: 300px;
      height: 300px;
      animation: float 5s infinite ease-in-out;
-     border: solid white        ;
-     border-radius: 70%;
+     border: solid white;
+     border-radius: 50%;
      box-shadow: 0 0 15px black;
 }
 
-.main-inside .info h1 {
-     text-align: center;
+.main .info h1 {
      font-weight: 500;
 }
 
 .socials {
      display: flex;
      flex-direction: row;
-     justify-content: center;
 }
 
 .socials img {
-     align-self: center;
      margin: 0 5px;
      width: 35px;
      height: 35px;
@@ -72,7 +55,7 @@ body {
 }
 
 .socials img:hover {
-     box-shadow: 0 0 6px rgba(32, 32, 32, 0.95)
+     box-shadow: 0 0 6px rgba(32, 32, 32, 0.95);
 }
 
 .center {
@@ -83,20 +66,32 @@ body {
 }
 
 .center p {
-     width: 550px;
+     width: 600px;
      text-align: center;
      margin: 0;
+     justify-content: space-between;
      letter-spacing: 0.5px;
+ }
+
+@media screen and (max-width: 828px) {
+    .center p {
+        width: 380px;
+    }
 }
 
 .center a {
-     text-decoration: none;
-     color: cyan;
-     transition: 0.5s ease-in-out;
+    text-decoration: none;
+    font-weight: bold;
+    color: purple;
+}
+
+.center a:visited {
+    color: paleturquoise;
 }
 
 .center a:hover {
-     text-shadow: 0 0 6px white;
+    text-shadow: 0 0 6px white;
+    cursor: help;
 }
 
 @keyframes float {
