@@ -1,60 +1,36 @@
-﻿<!DOCTYPE html>
-<html lang="en-us">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="author" content="its.Winter#6512">
-      <meta property="og:image" content="photos/logo.jpg">
-      <meta property="og:image:width" content="468">
-      <meta property="og:image:height" content="469">
-      <meta property="og:type" content="website">
-      <meta property="og:url" content="https://its-winter.github.io/">
-      <meta property="og:locale" content="en-US">
-      <meta property="og:title" content="its.Winter">
-      <meta property="og:site_name" content="its.Winter">
-      <meta property="og:description" content="A website for everything about me. Come see my socials and codes!">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <link rel="stylesheet" href="styles.css">
-      <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" rel="stylesheet">
-	<title>Its Winter</title>
-	<meta name="msapplication-TileColor" content="#da532c">
-      <meta name="theme-color" content="#ffffff">
-      <link rel="apple-touch-icon" sizes="180x180" href="photos/favicons/apple-touch-icon.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="photos/favicons/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="photos/favicons/favicon-16x16.png">
-      <link rel="manifest" href="photos/favicons/site.webmanifest">
-      <link rel="mask-icon" href="photos/favicons/safari-pinned-tab.svg" color="#5bbad5">
-      <meta name="msapplication-TileColor" content="#da532c">
-      <meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <title>Your Name - Personal Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet"> 
 </head>
 <body>
-      <section class="main">
-            <div>
-                  <div class="logo">
-                        <img src="photos/logo.png" alt="Winter's Logo">
-                  </div> 
-                  <div class="info">
-                        <h1><em>Socials</em></h1>
-                  </div><div class="socials">
-                        <a target="_blank" href="https://twitch.tv/its_fuyu">
-                              <img src="photos/icons/twitch-256.png" alt="Twitch Icon"></a>
-                        <a target="_blank" href="discord.html">
-                              <img src="photos/icons/discord.png" alt="Discord Icon"></a>
-                        <a target="_blank" href="https://twitter.com/Tagrubbs81">
-                              <img src="photos/icons/twitter.png" alt="Twitter Icon"></a>
-                        <a target="_blank" href="https://instagram.com/its.afuyu">
-                              <img src="photos/icons/instagram.png" alt="instagram Icon"></a>
-                        <a target="_blank" href="https://youtube.com/c/PhoenixGD">
-                              <img src="photos/icons/youtube-512.png" alt="Youtube Icon"></a>
-                        <a target="_blank" href="https://github.com/its-Winter">
-                              <img src="photos/icons/github.png" alt="Github Icon"></a>
-                  </div><div class="center">
-                        <h4><em>Autobiography</em></h4>
-                        <p>
-                            I'm an 18 year old dude enlisted in the Air Force with hobbies of gaming and coding. That's about it, learn more about me from my socials, feel free to message me too!
-                        </p>
-                  </div>
+    <div class="overlay">
+        <div class="content">
+            <img src="avatar.jpg" alt="Headshot of me">
+            <div class="social-links">
+                <a href="https://github.com/its-Winter"><img src="icons/github-mark-white.png" alt="GitHub Icon"></a>
+                <a href="https://www.instagram.com/its.afuyu/"><img style="filter: invert();" src="icons/instagram.png" alt="Instagram Icon"></a>
+                <a href="https://twitter.com/Tagrubbs81"><img style="filter: invert();" src="icons/x.png" alt="X (Twitter) Icon"></a>
+                <!-- Other social media icons and links -->
             </div>
-      </section>
+        </div>
+    </div>
+    
+
+    <footer>
+        <p>&copy; 2024 Thomas Grubbs Jr</p>
+    </footer>
+
+    <script>
+        document.querySelector('.content img').addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+    </script>
+
+
 </body>
 </html>

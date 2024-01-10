@@ -1,108 +1,109 @@
-*{
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      text-rendering: optimizeLegibility;
-      justify-content: center;
-      text-align: center;
-}
-
 body {
-      margin: 0;
-      font-family: 'Roboto Condensed', 'Segoe UI', sans-serif;
-      font-weight: normal;
-      color: white;
+    margin: 0;
+    font-family: 'JetBrains Mono', sans-serif;
+    overflow: hidden;
+    background-color: #000;
+    position: relative;
+    z-index: 1;
 }
 
-.main {
-      background: url("photos/background.jpg");
-      background-position: center top;
-      background-repeat: no-repeat;
-      background-size: cover;
-      min-height: 100vh;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: grid;
+    place-items: center;
+    z-index: 1;
 }
 
-.logo {
-      display: flex;
+.content {
+    text-align: center;
+    color: #fff;
+    max-width: 80%;
+    opacity: 0;
+    background-color: transparent;
+    animation: fade-in-upwards 2s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
+    animation-delay: 1s;
 }
 
-.logo img {
-      width: 300px;
-      height: 300px;
-      animation: float 5s infinite ease-in-out;
-      box-shadow: 0 0 15px black;
+.content img {
+    max-width: 400px; /* Adjust the maximum width as needed */
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    opacity: 0; /* Initially hidden */
+    animation: fade-in-upwards 2s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
+    animation-delay: 1s; /* Delay for the avatar */
 }
 
-.main .info h1 {
-      font-weight: 500;
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
 }
 
-.socials {
-      display: flex;
-      flex-direction: row;
+.social-links {
+    display: flex;
+    justify-content: center;
 }
 
-.socials img {
-      margin: 0 5px;
-      width: 35px;
-      height: 35px;
-      border-radius: 100%;
-      transition: 0.7s ease-in-out;
+.social-links img {
+    max-width: 40px; /* Adjust size as needed */
+    height: auto;
+    padding: 10px;
+    opacity: 0; /* Initially hidden */
+    animation: fade-in-upwards 1.5s cubic-bezier(0.645, 0.045, 0.355, 1) forwards; /* Shorter duration for social icons */
+    animation-delay: 1.75s; /* Delay for the social icons after the avatar */
 }
 
-.socials img:hover {
-      box-shadow: 0 0 6px rgba(32, 32, 32, 0.95);
+footer {
+    text-align: center;
+    padding: 10px 0;
+    color: #4e4e4e9e;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    opacity: 0; /* Initially hidden */
+    animation: fade-in 2s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
+    animation-delay: 1.5s; /* Adjust delay as needed */
 }
 
-.center {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+@media screen and (max-width: 600px) {
+    img {
+        max-width: 80%;
+        margin-bottom: 10px;
+    }
+  
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .social-links a {
+        margin: 5px 0;
+    }
 }
 
-.center p {
-      width: 600px;
-      text-align: center;
-      margin: 0;
-      justify-content: space-between;
-      letter-spacing: 0.5px;
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
-@media screen and (max-width: 828px) {
-      .center p {
-            width: 380px;
-      }
-}
-
-.center a {
-      text-decoration: none;
-      font-weight: bold;
-      color: purple;
-}
-
-.center a:visited {
-      color: paleturquoise;
-}
-
-.center a:hover {
-      text-shadow: 0 0 6px white;
-      cursor: help;
-}
-
-@keyframes float {
-      0% {
-            box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.8);
-            transform: translateY(0px);
-      }
-      50% {
-            box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.4);
-            transform: translateY(-20px);
-      }
-      100% {
-            box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.8);
-            transform: translateY(0px);
-      }
+@keyframes fade-in-upwards {
+    0% {
+        opacity: 0;
+        transform: translateY(50px); /* Start 50px down */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End at the normal position */
+    }
 }
